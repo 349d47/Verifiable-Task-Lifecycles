@@ -1,6 +1,6 @@
 # Verifiable Task Lifecycles for Autonomous Economic Agents Using Distributed Ledgers
 
-Prototype and experiment material for the paper **“Verifiable Task Lifecycles for Autonomous Economic Agents Using Distributed Ledgers.”**
+Prototype and experiment material for the paper *Verifiable Task Lifecycles for Autonomous Economic Agents Using Distributed Ledgers*.
 
 The prototype represents a delegated economic task as one persistent lifecycle. Each accepted transition links **Intent**, **Action**, **Payment**, and **Evidence**. Complete objects remain off-chain. Content commitments, task state, and transition order are recorded on a distributed ledger and can later be checked against the exported artifacts.
 
