@@ -1,0 +1,14 @@
+Name: openai
+Version: 3.13.0
+Name: x402
+Version: 2.22.0
+Name: web3
+Version: 7.16.0
+Name: eth-account
+Version: 0.14.0
+Name: fastapi
+Version: 0.141.1
+Name: uvicorn
+Version: 0.53.0
+Name: httpx
+Version: 0.28.1

@@ -1,0 +1,7 @@
+openai==3.13.0
+x402==2.22.0
+web3==7.16.0
+eth-account==0.14.0
+fastapi==0.141.1
+uvicorn==0.53.0
+httpx==0.28.1

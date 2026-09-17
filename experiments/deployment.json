@@ -1,0 +1,9 @@
+{
+  "network": "Base Sepolia",
+  "chain_id": 84532,
+  "caip2": "eip155:84532",
+  "contract_address": "0xE27e67da9D39aF51D778648E50EE2182C5B2D680",
+  "controller_address": "0xF482471FE90aC83376554054c039F188CB6CFA87",
+  "model_hash": "0x76f2aabf03a2d8eed791916bc06ecaf9c311394858030e85f3b40146e96289bf",
+  "policy_hash": "0x681419f3bc7d6cf3058193351c5b72e33d7633b08517d408698d943a30726926"
+}

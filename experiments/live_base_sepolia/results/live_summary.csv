@@ -1,0 +1,4 @@
+operation,n,gas_mean,gas_min,gas_max,latency_mean_ms,latency_median_ms,latency_min_ms,latency_max_ms,fee_mean_eth
+create_instance,5,115877.8,115873,115885,533.452,485.884,464.869,709.417,7.12045395797e-07
+finalize_instance,5,29649.8,29645,29657,385.312,250.037,243.502,684.999,1.80788221073e-07
+record_transition,8,145316.5,145303,145327,288.904,267.642,252.757,466.164,8.86984549766e-07

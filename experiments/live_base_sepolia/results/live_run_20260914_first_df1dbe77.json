@@ -1,0 +1,75 @@
+{
+  "instance_id": "005e92bf757c3de467d7918f165b9bdb144e20a752664cb904dbab0d5efba14a",
+  "verified": true,
+  "verification_issues": [],
+  "spent_units": 3,
+  "state": "completed",
+  "trace": [
+    {
+      "step": 1,
+      "planner_kind": "action",
+      "planner_reason": "Start with the lowest-cost relevant evidence; transaction history can reveal risk indicators before considering more expensive reputation or graph analysis.",
+      "openai_response_id": "resp_021fdc48c7adfb08006aa84682b4d887d29152e259fda6045e",
+      "model": "gpt-5.6-sol",
+      "action_id": "13f8dc1a0c45bb8f40f24d100cc816a2d6eb969cb6653ca6813b8c47829c0ea8",
+      "policy": "permitted",
+      "payment_tx": "0x69e85a9fd0ff8d40b8185b609c15c429508ff903c1bece73e7c2956e582ba2c0",
+      "network": "eip155:84532",
+      "evidence_id": "8a7cb9d5ad0714ab6b49c458bb8358622637b094572b221ef49b86f75c314d18"
+    },
+    {
+      "step": 2,
+      "planner_kind": "action",
+      "planner_reason": "The low-cost history check was insufficient; reputation lookup is the cheapest complementary evidence likely to clarify elevated risk.",
+      "openai_response_id": "resp_0f77d5e5c2aca89d006aa84688505c87d2903e28b0cde6f30b",
+      "model": "gpt-5.6-sol",
+      "action_id": "fe215bace93839e295fc1044acb4255d08e582de795061f2e4e2c734a61a2b23",
+      "policy": "permitted",
+      "payment_tx": "0x3f09efddc8b751fa360b91039291b0df66c9b8d3996102f780f6a2a89abe2cd5",
+      "network": "eip155:84532",
+      "evidence_id": "ab1b28deecc0fd005028dfe0dad302d6e5ebadf4bf0750bc956538eeddfcb108"
+    },
+    {
+      "step": 3,
+      "planner_kind": "finish",
+      "planner_reason": "Available evidence is sufficient for the requested risk assessment, so further paid analysis is not economically necessary.",
+      "openai_response_id": "resp_0bcce067d76a353d006aa8468da2f487d2af564ec73f68da75",
+      "model": "gpt-5.6-sol",
+      "summary": "The target entity 0xabc presents elevated risk based on a successful reputation lookup with 0.78 confidence; transaction history alone was inconclusive."
+    }
+  ],
+  "ledger_metrics": [
+    {
+      "operation": "create_instance",
+      "tx_hash": "c6117ce1d8eca8a8ec4788f7cd7a2f8f346209e648a1f185ceba958985ff680e",
+      "gas_used": 115873,
+      "effective_gas_price": 6000000,
+      "latency_ms": 485.383,
+      "block_number": 46822354
+    },
+    {
+      "operation": "record_transition",
+      "tx_hash": "f51e0eaf3a4e6cb2bb09a2c0393ef68141b5d3ee53a7e9c7ed96cfce8285d36a",
+      "gas_used": 145315,
+      "effective_gas_price": 6000000,
+      "latency_ms": 260.246,
+      "block_number": 46822357
+    },
+    {
+      "operation": "record_transition",
+      "tx_hash": "ae484e57c8877b3da99e3627b604b25f9e2f37dae8b26b4f23a34b13fadcce94",
+      "gas_used": 145303,
+      "effective_gas_price": 6000000,
+      "latency_ms": 269.102,
+      "block_number": 46822359
+    },
+    {
+      "operation": "finalize_instance",
+      "tx_hash": "52943fa892d671b013f6e0da07f7ab93f2c00b3728e251c6afe232ed87f25cab",
+      "gas_used": 29645,
+      "effective_gas_price": 6000000,
+      "latency_ms": 250.037,
+      "block_number": 46822362
+    }
+  ]
+}

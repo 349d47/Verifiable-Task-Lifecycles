@@ -1,0 +1,82 @@
+{
+  "experiment": {
+    "timestamp_utc": "2026-09-14T19:23:15.625709+00:00",
+    "contract_address": "0xE27e67da9D39aF51D778648E50EE2182C5B2D680",
+    "chain_id": 84532,
+    "rpc_url": "https://sepolia.base.org",
+    "target_entity": "0xabc"
+  },
+  "instance_id": "0da45f13679f1975aebef5b9a41ecd1c39330fb1f3c6f1cc8ed1ac279e8771cb",
+  "verified": true,
+  "verification_issues": [],
+  "spent_units": 3,
+  "state": "completed",
+  "trace": [
+    {
+      "step": 1,
+      "planner_kind": "action",
+      "planner_reason": "Start with the lowest-cost evidence; transaction history can reveal basic risk indicators before purchasing broader analysis.",
+      "openai_response_id": "resp_005ec9dc9e8c243f006aa84992c13c87d2ad173712af085bae",
+      "model": "gpt-5.6-sol",
+      "action_id": "13f8dc1a0c45bb8f40f24d100cc816a2d6eb969cb6653ca6813b8c47829c0ea8",
+      "policy": "permitted",
+      "payment_tx": "0x7d31dea42357dee6aaaccab4b4f8220d2009796a91b07c44c53b7dbd53e27223",
+      "network": "eip155:84532",
+      "evidence_id": "fe8275d8d4e260c8b633e162e2ab6e038b365043bc6eae6e4f6f3a2b6d2cf78d"
+    },
+    {
+      "step": 2,
+      "planner_kind": "action",
+      "planner_reason": "The low-cost history check was insufficient; a reputation lookup is the next-cheapest complementary signal and may establish elevated risk without paying for broader graph or forensic analysis.",
+      "openai_response_id": "resp_0e3e201efba963c2006aa84999908887d2a96d42df65027b0c",
+      "model": "gpt-5.6-sol",
+      "action_id": "fe215bace93839e295fc1044acb4255d08e582de795061f2e4e2c734a61a2b23",
+      "policy": "permitted",
+      "payment_tx": "0x7079e5c70d35562c57b3dcb56e7d69f786e8d84c073d60c254998915e9106d67",
+      "network": "eip155:84532",
+      "evidence_id": "5a7ef81b1e73705d60e0b38794cbc4d26c80ba2803491dddcfea12b5c31c3b6d"
+    },
+    {
+      "step": 3,
+      "planner_kind": "finish",
+      "planner_reason": "Available evidence is sufficient for the requested risk assessment; further paid analysis is not economically necessary.",
+      "openai_response_id": "resp_0020666ffa7aead2006aa8499f980c87d2b798a1ee7b67d6fe",
+      "model": "gpt-5.6-sol",
+      "summary": "The target entity presents elevated risk based on a successful reputation lookup with 0.78 confidence, supported by observed transaction activity."
+    }
+  ],
+  "ledger_metrics": [
+    {
+      "operation": "create_instance",
+      "tx_hash": "6ca9d18a8997fa929b5e4ae99e0e89d0d651a9fad1be640bbb8ed938e777f87c",
+      "gas_used": 115885,
+      "effective_gas_price": 6000000,
+      "latency_ms": 464.869,
+      "block_number": 46822746
+    },
+    {
+      "operation": "record_transition",
+      "tx_hash": "5263e03ebd5ec9f7c3dbe647fdde9ab5519ea84197265b6df9696e0642106f8f",
+      "gas_used": 145327,
+      "effective_gas_price": 6000000,
+      "latency_ms": 256.311,
+      "block_number": 46822749
+    },
+    {
+      "operation": "record_transition",
+      "tx_hash": "2512b9bcdd7cd8667061506600716172552e9087ad29485120c12788b2a2befd",
+      "gas_used": 145315,
+      "effective_gas_price": 6000000,
+      "latency_ms": 266.182,
+      "block_number": 46822752
+    },
+    {
+      "operation": "finalize_instance",
+      "tx_hash": "215cb7e995ed699ad2785a02281b834986d115c43e454fee5e15d420b57b7cad",
+      "gas_used": 29657,
+      "effective_gas_price": 6000000,
+      "latency_ms": 243.502,
+      "block_number": 46822754
+    }
+  ]
+}

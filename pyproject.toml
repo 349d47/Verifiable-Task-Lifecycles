@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verifiable-task-lifecycles"
+version = "1.0.0"
+description = "Reference implementation and reproducibility utilities for verifiable task lifecycles of autonomous economic agents."
+readme = "README.md"
+requires-python = ">=3.13"
+license = {text = "MIT for code; see LICENSE for artifact exclusions"}
+dependencies = []
+
+[project.optional-dependencies]
+live = [
+  "openai==3.13.0",
+  "x402==2.22.0",
+  "web3==7.16.0",
+  "eth-account==0.14.0",
+  "fastapi==0.141.1",
+  "uvicorn==0.53.0",
+  "httpx==0.28.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

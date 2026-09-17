@@ -1,0 +1,62 @@
+{
+  "experiment": {
+    "timestamp_utc": "2026-09-14T19:23:30.229149+00:00",
+    "contract_address": "0xE27e67da9D39aF51D778648E50EE2182C5B2D680",
+    "chain_id": 84532,
+    "rpc_url": "https://sepolia.base.org",
+    "target_entity": "0xabc"
+  },
+  "instance_id": "0a1f1f85c2bdcd548301c2f304eca8eb329d7758168898a613ef011c340956b6",
+  "verified": true,
+  "verification_issues": [],
+  "spent_units": 2,
+  "state": "completed",
+  "trace": [
+    {
+      "step": 1,
+      "planner_kind": "action",
+      "planner_reason": "A direct reputation lookup is the lowest-cost service tailored to assessing elevated entity risk.",
+      "openai_response_id": "resp_0741143c493aab50006aa849a6babc87d2a7b2d51cd396f077",
+      "model": "gpt-5.6-sol",
+      "action_id": "fe215bace93839e295fc1044acb4255d08e582de795061f2e4e2c734a61a2b23",
+      "policy": "permitted",
+      "payment_tx": "0x767889b5aa42ab36bd8cc711d405d9abd88b25d7d5859ea5c8f808aa0161ed10",
+      "network": "eip155:84532",
+      "evidence_id": "7a91a079a76197057338add6db090811a38bb89b6183d6785db8768f7ce90d7c"
+    },
+    {
+      "step": 2,
+      "planner_kind": "finish",
+      "planner_reason": "Direct reputation evidence is sufficient for the stated assessment; further paid analysis is not economically necessary.",
+      "openai_response_id": "resp_058e8c5d415f3eab006aa849adbd0487d2a991ee769e61894e",
+      "model": "gpt-5.6-sol",
+      "summary": "The target entity 0xabc presents elevated risk based on a successful reputation lookup with 0.78 confidence."
+    }
+  ],
+  "ledger_metrics": [
+    {
+      "operation": "create_instance",
+      "tx_hash": "0b378bf53f34cdab1d1d13f3673278b081e51e80612193e3e999905ff55bc1ef",
+      "gas_used": 115885,
+      "effective_gas_price": 6000000,
+      "latency_ms": 709.417,
+      "block_number": 46822756
+    },
+    {
+      "operation": "record_transition",
+      "tx_hash": "8f96b604841bfd28a5bde2e99f1daadb79519ac1fc18bc19b24abcea8bc8e06c",
+      "gas_used": 145327,
+      "effective_gas_price": 6000000,
+      "latency_ms": 252.757,
+      "block_number": 46822759
+    },
+    {
+      "operation": "finalize_instance",
+      "tx_hash": "22b2daa0bd39be2172b3a89a2d60880fc386886761126c1bf19c47e63f924b5f",
+      "gas_used": 29657,
+      "effective_gas_price": 6000000,
+      "latency_ms": 684.999,
+      "block_number": 46822762
+    }
+  ]
+}

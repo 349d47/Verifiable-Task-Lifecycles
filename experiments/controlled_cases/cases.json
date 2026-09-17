@@ -1,0 +1,50 @@
+[
+  {
+    "id": "T1",
+    "scenario": "Valid first service purchase",
+    "request_local": "permit",
+    "lifecycle": "permit",
+    "expected": "permit",
+    "rq": "RQ1"
+  },
+  {
+    "id": "T2",
+    "scenario": "Exceeds remaining task budget",
+    "request_local": "deny",
+    "lifecycle": "deny",
+    "expected": "deny",
+    "rq": "RQ1"
+  },
+  {
+    "id": "T3",
+    "scenario": "Repeat equivalent service after success",
+    "request_local": "permit",
+    "lifecycle": "deny",
+    "expected": "deny",
+    "rq": "RQ1"
+  },
+  {
+    "id": "T4",
+    "scenario": "Fallback after insufficient result",
+    "request_local": "permit",
+    "lifecycle": "permit",
+    "expected": "permit",
+    "rq": "RQ1"
+  },
+  {
+    "id": "T5",
+    "scenario": "Paid action after task completion",
+    "request_local": "permit",
+    "lifecycle": "deny",
+    "expected": "deny",
+    "rq": "RQ1"
+  },
+  {
+    "id": "T6",
+    "scenario": "Evidence modified after recording",
+    "request_local": "not_applicable",
+    "lifecycle": "detected",
+    "expected": "detected",
+    "rq": "artifact_integrity"
+  }
+]

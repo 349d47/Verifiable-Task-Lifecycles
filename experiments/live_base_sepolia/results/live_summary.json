@@ -1,0 +1,56 @@
+{
+  "runs": 5,
+  "all_verified": true,
+  "spent_units": [
+    2,
+    3,
+    3,
+    2,
+    3
+  ],
+  "operations": [
+    {
+      "operation": "create_instance",
+      "n": 5,
+      "gas_mean": 115877.8,
+      "gas_min": 115873,
+      "gas_max": 115885,
+      "latency_mean_ms": 533.452,
+      "latency_median_ms": 485.884,
+      "latency_min_ms": 464.869,
+      "latency_max_ms": 709.417,
+      "fee_mean_eth": "7.12045395797e-07"
+    },
+    {
+      "operation": "finalize_instance",
+      "n": 5,
+      "gas_mean": 29649.8,
+      "gas_min": 29645,
+      "gas_max": 29657,
+      "latency_mean_ms": 385.312,
+      "latency_median_ms": 250.037,
+      "latency_min_ms": 243.502,
+      "latency_max_ms": 684.999,
+      "fee_mean_eth": "1.80788221073e-07"
+    },
+    {
+      "operation": "record_transition",
+      "n": 8,
+      "gas_mean": 145316.5,
+      "gas_min": 145303,
+      "gas_max": 145327,
+      "latency_mean_ms": 288.904,
+      "latency_median_ms": 267.642,
+      "latency_min_ms": 252.757,
+      "latency_max_ms": 466.164,
+      "fee_mean_eth": "8.86984549766e-07"
+    }
+  ],
+  "source_files": [
+    "live_run_20260914T192234Z_d4ea0c76.json",
+    "live_run_20260914T192255Z_d1ccd9bf.json",
+    "live_run_20260914T192315Z_0da45f13.json",
+    "live_run_20260914T192330Z_0a1f1f85.json",
+    "live_run_20260914_first_df1dbe77.json"
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "experiment": {
+    "kind": "external_x402_interoperability",
+    "timestamp_utc": "2026-09-15T05:08:52.754012+00:00",
+    "contract_address": "0xE27e67da9D39aF51D778648E50EE2182C5B2D680",
+    "chain_id": 84532,
+    "rpc_url": "https://sepolia.base.org",
+    "external_provider": "external-sanctions-screener",
+    "external_endpoint": "https://tollbooth-sanctions-screener-testnet.sjwilliams8.workers.dev/screen",
+    "counterparty": "Banco Nacional de Cuba",
+    "expected_price_units": 1
+  },
+  "instance_id": "5481a132e60fde1d4f696c7578e1edbc1d21bcccc9f7d3737b83489f99911ef8",
+  "intent": {
+    "goal": "Obtain one independently operated paid screening signal for a named counterparty",
+    "budget": 1,
+    "allowed_services": [
+      "sanctions-screen"
+    ],
+    "allowed_providers": [
+      "external-sanctions-screener"
+    ]
+  },
+  "action": {
+    "operation": "purchase_service",
+    "provider": "external-sanctions-screener",
+    "service": "sanctions-screen",
+    "parameters": {
+      "name": "Banco Nacional de Cuba",
+      "endpoint": "https://tollbooth-sanctions-screener-testnet.sjwilliams8.workers.dev/screen"
+    },
+    "value": 1
+  },
+  "action_id": "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251",
+  "policy": "permitted",
+  "phase": "completed",
+  "ledger_metrics": [
+    {
+      "operation": "create_instance",
+      "tx_hash": "06f563ac521cc57cc74b71d7259316785b3f793bb315913cc7ddd95739915f21",
+      "gas_used": 115897,
+      "effective_gas_price": 6000000,
+      "latency_ms": 470.514,
+      "block_number": 46840323
+    },
+    {
+      "operation": "record_transition",
+      "tx_hash": "d2da5d88856ee6f9936f70a583819ad269b071c629be59a35a812c3df00fabd9",
+      "gas_used": 145315,
+      "effective_gas_price": 6000000,
+      "latency_ms": 257.535,
+      "block_number": 46840326
+    },
+    {
+      "operation": "finalize_instance",
+      "tx_hash": "4339d145f473ad59a39a404b2617d492e61dbe9b12937cf743f36d4f5e4fa7bc",
+      "gas_used": 29657,
+      "effective_gas_price": 6000000,
+      "latency_ms": 254.369,
+      "block_number": 46840327
+    }
+  ],
+  "payment_tx": "0x70ea93eee86bc82390c0035f4c2a9e94104d1d48f85632608fb172112cec7480",
+  "network": "eip155:84532",
+  "payment": {
+    "reference": "0x70ea93eee86bc82390c0035f4c2a9e94104d1d48f85632608fb172112cec7480",
+    "payer": "0xF482471FE90aC83376554054c039F188CB6CFA87",
+    "payee": "external-sanctions-screener",
+    "amount": 1,
+    "action_id": "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251",
+    "protocol": "x402-v2",
+    "network": "eip155:84532"
+  },
+  "external_response": {
+    "data": {
+      "candidates": [
+        {
+          "countries": [
+            "Japan",
+            "Panama",
+            "Spain",
+            "Switzerland"
+          ],
+          "entity_type": "entity",
+          "list": "sdn",
+          "match_confidence": 100,
+          "match_reasons": [
+            "exact_normalized_name"
+          ],
+          "matched_name": "BANCO NACIONAL DE CUBA",
+          "matched_name_type": "primary",
+          "name": "BANCO NACIONAL DE CUBA",
+          "programs": [
+            "CUBA"
+          ],
+          "remarks": "a.k.a. 'BNC'.",
+          "uid": 306
+        }
+      ],
+      "query": {
+        "name": "Banco Nacional de Cuba"
+      }
+    },
+    "meta": {
+      "disclaimer": "This response is an assistive screening signal derived from public government data. It is not a certified compliance determination, a consumer report, or legal advice.",
+      "generated_at": "2026-09-15T05:08:54.869Z",
+      "service": "sanctions-screener",
+      "source_datasets": [
+        {
+          "last_synced_at": "2026-09-11T05:10:19.144Z",
+          "name": "OFAC Consolidated (non-SDN) List",
+          "stale": true,
+          "upstream_published_at": "2026-09-10T00:00:00-04:00"
+        },
+        {
+          "last_synced_at": "2026-09-11T05:10:19.144Z",
+          "name": "OFAC Specially Designated Nationals (SDN) List",
+          "stale": true,
+          "upstream_published_at": "2026-09-10T00:00:00-04:00"
+        }
+      ],
+      "version": "0.1.0"
+    }
+  },
+  "evidence": {
+    "instance_id": "5481a132e60fde1d4f696c7578e1edbc1d21bcccc9f7d3737b83489f99911ef8",
+    "action_id": "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251",
+    "result": "{\"data\": {\"candidates\": [{\"countries\": [\"Japan\", \"Panama\", \"Spain\", \"Switzerland\"], \"entity_type\": \"entity\", \"list\": \"sdn\", \"match_confidence\": 100, \"match_reasons\": [\"exact_normalized_name\"], \"matched_name\": \"BANCO NACIONAL DE CUBA\", \"matched_name_type\": \"primary\", \"name\": \"BANCO NACIONAL DE CUBA\", \"programs\": [\"CUBA\"], \"remarks\": \"a.k.a. 'BNC'.\", \"uid\": 306}], \"query\": {\"name\": \"Banco Nacional de Cuba\"}}, \"meta\": {\"disclaimer\": \"This response is an assistive screening signal derived from public government data. It is not a certified compliance determination, a consumer report, or legal advice.\", \"generated_at\": \"2026-09-15T05:08:54.869Z\", \"service\": \"sanctions-screener\", \"source_datasets\": [{\"last_synced_at\": \"2026-09-11T05:10:19.144Z\", \"name\": \"OFAC Consolidated (non-SDN) List\", \"stale\": true, \"upstream_published_at\": \"2026-09-10T00:00:00-04:00\"}, {\"last_synced_at\": \"2026-09-11T05:10:19.144Z\", \"name\": \"OFAC Specially Designated Nationals (SDN) List\", \"stale\": true, \"upstream_published_at\": \"2026-09-10T00:00:00-04:00\"}], \"version\": \"0.1.0\"}}",
+    "outcome": "success",
+    "receipt_ref": "0x70ea93eee86bc82390c0035f4c2a9e94104d1d48f85632608fb172112cec7480"
+  },
+  "evidence_id": "1eb929d581bbd6d7dfe575f8293834841cba733653ed6fab0fa6050fc0a7437e",
+  "transition": {
+    "instance_id": "5481a132e60fde1d4f696c7578e1edbc1d21bcccc9f7d3737b83489f99911ef8",
+    "transition_no": 0,
+    "previous_state": "active",
+    "action_id": "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251",
+    "payment_id": "1ffea6c2b4a6a9187b8cc101c2e21ce3061c38b3e616553ef52ea560823de702",
+    "evidence_id": "1eb929d581bbd6d7dfe575f8293834841cba733653ed6fab0fa6050fc0a7437e",
+    "next_state": "active"
+  },
+  "artifacts": {
+    "intent": {
+      "goal": "Obtain one independently operated paid screening signal for a named counterparty",
+      "budget": 1,
+      "allowed_services": [
+        "sanctions-screen"
+      ],
+      "allowed_providers": [
+        "external-sanctions-screener"
+      ]
+    },
+    "actions": {
+      "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251": {
+        "operation": "purchase_service",
+        "provider": "external-sanctions-screener",
+        "service": "sanctions-screen",
+        "parameters": {
+          "name": "Banco Nacional de Cuba",
+          "endpoint": "https://tollbooth-sanctions-screener-testnet.sjwilliams8.workers.dev/screen"
+        },
+        "value": 1
+      }
+    },
+    "payments": {
+      "1ffea6c2b4a6a9187b8cc101c2e21ce3061c38b3e616553ef52ea560823de702": {
+        "reference": "0x70ea93eee86bc82390c0035f4c2a9e94104d1d48f85632608fb172112cec7480",
+        "payer": "0xF482471FE90aC83376554054c039F188CB6CFA87",
+        "payee": "external-sanctions-screener",
+        "amount": 1,
+        "action_id": "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251",
+        "protocol": "x402-v2",
+        "network": "eip155:84532"
+      }
+    },
+    "evidence": {
+      "1eb929d581bbd6d7dfe575f8293834841cba733653ed6fab0fa6050fc0a7437e": {
+        "instance_id": "5481a132e60fde1d4f696c7578e1edbc1d21bcccc9f7d3737b83489f99911ef8",
+        "action_id": "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251",
+        "result": "{\"data\": {\"candidates\": [{\"countries\": [\"Japan\", \"Panama\", \"Spain\", \"Switzerland\"], \"entity_type\": \"entity\", \"list\": \"sdn\", \"match_confidence\": 100, \"match_reasons\": [\"exact_normalized_name\"], \"matched_name\": \"BANCO NACIONAL DE CUBA\", \"matched_name_type\": \"primary\", \"name\": \"BANCO NACIONAL DE CUBA\", \"programs\": [\"CUBA\"], \"remarks\": \"a.k.a. 'BNC'.\", \"uid\": 306}], \"query\": {\"name\": \"Banco Nacional de Cuba\"}}, \"meta\": {\"disclaimer\": \"This response is an assistive screening signal derived from public government data. It is not a certified compliance determination, a consumer report, or legal advice.\", \"generated_at\": \"2026-09-15T05:08:54.869Z\", \"service\": \"sanctions-screener\", \"source_datasets\": [{\"last_synced_at\": \"2026-09-11T05:10:19.144Z\", \"name\": \"OFAC Consolidated (non-SDN) List\", \"stale\": true, \"upstream_published_at\": \"2026-09-10T00:00:00-04:00\"}, {\"last_synced_at\": \"2026-09-11T05:10:19.144Z\", \"name\": \"OFAC Specially Designated Nationals (SDN) List\", \"stale\": true, \"upstream_published_at\": \"2026-09-10T00:00:00-04:00\"}], \"version\": \"0.1.0\"}}",
+        "outcome": "success",
+        "receipt_ref": "0x70ea93eee86bc82390c0035f4c2a9e94104d1d48f85632608fb172112cec7480"
+      }
+    },
+    "records": [
+      {
+        "instance_id": "5481a132e60fde1d4f696c7578e1edbc1d21bcccc9f7d3737b83489f99911ef8",
+        "transition_no": 0,
+        "previous_state": "active",
+        "action_id": "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251",
+        "payment_id": "1ffea6c2b4a6a9187b8cc101c2e21ce3061c38b3e616553ef52ea560823de702",
+        "evidence_id": "1eb929d581bbd6d7dfe575f8293834841cba733653ed6fab0fa6050fc0a7437e",
+        "next_state": "active"
+      }
+    ]
+  },
+  "verified": true,
+  "verification_issues": [],
+  "spent_units": 1,
+  "state": "completed",
+  "trace": [
+    {
+      "step": 1,
+      "planner_kind": "fixed_interoperability_action",
+      "action_id": "1b048dbc532a5ac24a52eebae39818c84193e6ea42bafd003682e3d94539f251",
+      "policy": "permitted",
+      "payment_tx": "0x70ea93eee86bc82390c0035f4c2a9e94104d1d48f85632608fb172112cec7480",
+      "network": "eip155:84532",
+      "evidence_id": "1eb929d581bbd6d7dfe575f8293834841cba733653ed6fab0fa6050fc0a7437e",
+      "external_response": {
+        "data": {
+          "candidates": [
+            {
+              "countries": [
+                "Japan",
+                "Panama",
+                "Spain",
+                "Switzerland"
+              ],
+              "entity_type": "entity",
+              "list": "sdn",
+              "match_confidence": 100,
+              "match_reasons": [
+                "exact_normalized_name"
+              ],
+              "matched_name": "BANCO NACIONAL DE CUBA",
+              "matched_name_type": "primary",
+              "name": "BANCO NACIONAL DE CUBA",
+              "programs": [
+                "CUBA"
+              ],
+              "remarks": "a.k.a. 'BNC'.",
+              "uid": 306
+            }
+          ],
+          "query": {
+            "name": "Banco Nacional de Cuba"
+          }
+        },
+        "meta": {
+          "disclaimer": "This response is an assistive screening signal derived from public government data. It is not a certified compliance determination, a consumer report, or legal advice.",
+          "generated_at": "2026-09-15T05:08:54.869Z",
+          "service": "sanctions-screener",
+          "source_datasets": [
+            {
+              "last_synced_at": "2026-09-11T05:10:19.144Z",
+              "name": "OFAC Consolidated (non-SDN) List",
+              "stale": true,
+              "upstream_published_at": "2026-09-10T00:00:00-04:00"
+            },
+            {
+              "last_synced_at": "2026-09-11T05:10:19.144Z",
+              "name": "OFAC Specially Designated Nationals (SDN) List",
+              "stale": true,
+              "upstream_published_at": "2026-09-10T00:00:00-04:00"
+            }
+          ],
+          "version": "0.1.0"
+        }
+      }
+    }
+  ]
+}

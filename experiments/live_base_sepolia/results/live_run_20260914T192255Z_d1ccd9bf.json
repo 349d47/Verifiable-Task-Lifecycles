@@ -1,0 +1,82 @@
+{
+  "experiment": {
+    "timestamp_utc": "2026-09-14T19:22:55.805489+00:00",
+    "contract_address": "0xE27e67da9D39aF51D778648E50EE2182C5B2D680",
+    "chain_id": 84532,
+    "rpc_url": "https://sepolia.base.org",
+    "target_entity": "0xabc"
+  },
+  "instance_id": "d1ccd9bf3d55c83f4a23cdf451fb7340ea174efe68164c3799443ffab9f300b9",
+  "verified": true,
+  "verification_issues": [],
+  "spent_units": 3,
+  "state": "completed",
+  "trace": [
+    {
+      "step": 1,
+      "planner_kind": "action",
+      "planner_reason": "Start with the lowest-cost relevant evidence; transaction history may reveal risk indicators before purchasing broader analysis.",
+      "openai_response_id": "resp_0e8ca30e46740c15006aa8497dd2cc87d2a4b76e2c714d7e96",
+      "model": "gpt-5.6-sol",
+      "action_id": "13f8dc1a0c45bb8f40f24d100cc816a2d6eb969cb6653ca6813b8c47829c0ea8",
+      "policy": "permitted",
+      "payment_tx": "0x4bb77018ecb6f8023a2473f915a7f8f6027d4b8bde2bcf605903f7f93e988b92",
+      "network": "eip155:84532",
+      "evidence_id": "68fd823b78244cc5cdcfbb14c8f5d871c9bc0f389c10e774e58df0ffb10e3210"
+    },
+    {
+      "step": 2,
+      "planner_kind": "action",
+      "planner_reason": "History was insufficient; reputation is the lowest-cost next signal directly relevant to elevated-risk assessment.",
+      "openai_response_id": "resp_0d402e8cf7a562a5006aa8498456b487d28590fe21ecbfab8c",
+      "model": "gpt-5.6-sol",
+      "action_id": "fe215bace93839e295fc1044acb4255d08e582de795061f2e4e2c734a61a2b23",
+      "policy": "permitted",
+      "payment_tx": "0x88d64c5be4a614161c613d11d73394dcf1eb70b04ffc53b1c5c157d4c4d69352",
+      "network": "eip155:84532",
+      "evidence_id": "eff5e9ad9390abd3ee32b10589ae34421c1f05424b4da9e2fa572912647f71f4"
+    },
+    {
+      "step": 3,
+      "planner_kind": "finish",
+      "planner_reason": "Available evidence is sufficient for the risk assessment, so further paid analysis is not economically necessary.",
+      "openai_response_id": "resp_0950b39727ba74f8006aa8498a765887d29dfb8daeb072ed9a",
+      "model": "gpt-5.6-sol",
+      "summary": "The target entity presents elevated risk based on a successful reputation assessment with 0.78 confidence; transaction history confirms activity but was independently inconclusive."
+    }
+  ],
+  "ledger_metrics": [
+    {
+      "operation": "create_instance",
+      "tx_hash": "e143a2ca17d9a2c5a9a39b89b843962e8defbe1b54562841fe78e413a8375c2b",
+      "gas_used": 115873,
+      "effective_gas_price": 6401285,
+      "latency_ms": 521.709,
+      "block_number": 46822735
+    },
+    {
+      "operation": "record_transition",
+      "tx_hash": "489fcdca45a0896c67738eebd0a4e5d3c3bdb9418a89a4996a3d2a0e97ad8a97",
+      "gas_used": 145315,
+      "effective_gas_price": 6233924,
+      "latency_ms": 269.958,
+      "block_number": 46822739
+    },
+    {
+      "operation": "record_transition",
+      "tx_hash": "1151f06a337b39de4dde85e18d25fe63d25aa2f9289c76955bd77cafa4c1c8e1",
+      "gas_used": 145315,
+      "effective_gas_price": 6160516,
+      "latency_ms": 270.514,
+      "block_number": 46822741
+    },
+    {
+      "operation": "finalize_instance",
+      "tx_hash": "c33584496bcbf09daa8a73afa6afde282e0bd73e334b4d9bd7d39e762e69c9ab",
+      "gas_used": 29645,
+      "effective_gas_price": 6044275,
+      "latency_ms": 501.504,
+      "block_number": 46822744
+    }
+  ]
+}
